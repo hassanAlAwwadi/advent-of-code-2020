@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fb6dafc29fc55599eb7a81b6632c20dc6d56c179018e4182448a1c642d77456b
+-- hash: a271f7ced07661f71952925a91dc6e7e8cd8600a9677cf9f3fab9b2503182f1e
 
 name:           advent-of-code
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       Advent
       Day1
       Day2
+      Day3
       Lib
   other-modules:
       Paths_advent_of_code
@@ -37,6 +38,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
     , split
   default-language: Haskell2010
 
@@ -50,6 +52,7 @@ executable advent-of-code-exe
   build-depends:
       advent-of-code
     , base >=4.7 && <5
+    , containers
     , split
   default-language: Haskell2010
 
@@ -64,5 +67,6 @@ test-suite advent-of-code-test
   build-depends:
       advent-of-code
     , base >=4.7 && <5
+    , containers
     , split
   default-language: Haskell2010
