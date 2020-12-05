@@ -70,6 +70,7 @@ isAt :: Eq a => a -> Int -> [a] -> Bool
 isAt _ _ [] = False
 isAt k 0 (c:_) = k == c
 isAt k n (_:cs) = isAt k (n-1) cs 
+
 -- advent 
 day2 = Advent {
     files  = (file, file),

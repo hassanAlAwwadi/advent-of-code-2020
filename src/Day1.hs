@@ -5,7 +5,7 @@ import Data.Maybe (mapMaybe)
 import Text.Read ( readMaybe )
 import Control.Monad(guard)
 
-import Advent
+import Advent ( Advent(..) )
 
 parse :: String -> [Int]
 parse = mapMaybe readMaybe . lines
